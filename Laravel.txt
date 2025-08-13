@@ -1,0 +1,36 @@
+Go to GitHub and log in.
+
+Click the + button in the top right → New repository.
+
+Give it a name (e.g., my-laravel-app).
+
+Keep it public or private (your choice).
+
+Do NOT initialize with a README (we’ll push our existing project).
+
+Click Create repository.
+
+You’ll now see a page with Git commands — keep it open.
+
+Go to Your Laravel App Folder
+Open your terminal and navigate to your Laravel project:
+cd /path/to/your-laravel-app
+
+Initialize Git in the Laravel App
+git init
+git add .
+git commit -m "Initial commit of Laravel app"
+
+Link Your GitHub Repository
+Copy the repository URL from GitHub (looks like https://github.com/username/my-laravel-app.git) and run:
+git remote add origin https://github.com/username/my-laravel-app.git
+
+
+Push Your Laravel App to GitHub
+git branch -M main
+git push -u origin main
+
+
+Now your Laravel app is on GitHub.
+You can clone it later on EC2 with:
+git clone https://github.com/username/my-laravel-app.git
